@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* navbar starts here  */
+.bg-width {
+    width: 100%;
+    height: 70px;
+    background: #507e50 !important;
+}
+.container-fluid {
+    justify-content: center !important;
+}
+.input-style {
+    width: 400px;
+}
+#vehicleInput {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    transition: 0.9s;
+}
+#vehicleInput:hover {
+    box-shadow: 4px 4px 4px 4px #000000;
+}
+.icons {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fa-motorcycle {
+    font-size: 23px;
+    color: aliceblue;
+}
+.fa-car {
+    font-size: 23px;
+    color: aliceblue;
+}
+/* navbar ends here  */
+
+/* section starts here */
+.registration-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #507e50;
+    height: 100px;
+}
+.form-select {
+    box-shadow: none !important;
+    border: 1px solid rgb(165, 163, 163) !important;
+}
+.vehicleNumber {
+    height: 40px;
+    width: 283px;
+    border: 1px solid rgb(165, 163, 163) !important;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.parking-submit {
+    width: 200px;
+    height: 60px;
+    border: 1px solid rgb(165, 163, 163) !important;
+    border-radius: 20px;
+}
+.parking-submit:hover {
+    background-color: rgb(174, 187, 198);
+}
+/* section ends here */
+
+/* parking card section start here */
+.card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 4px 4px grey;
+    width: auto;
+}
+.card-body {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-shrink: unset;
+}
+.fa-trash {
+    font-size: 21px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.pupup{
+    height: 300px;
+    width: 100%;
+
+}
+/* parking card section end here */
+@media only screen and (max-width: 768px) {
+    .registration-form{
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     height: auto;
+     padding: 20px;
+    }
+    .g-col-4{
+        padding-bottom: 20px;
+    }
+    #vehicleSubmission{
+        height: 40px;
+        width: 100px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
